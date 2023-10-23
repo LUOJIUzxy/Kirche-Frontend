@@ -13,14 +13,14 @@ const TopNav = ({ colorInvert = false }: Props): JSX.Element => {
   return (
     <Box display={'flex'} justifyContent={'flex-end'} alignItems={'center'}>
       <Box marginRight={{ xs: 1, sm: 2 }}>
-        <Link
+        {/* <Link
           underline="none"
           component="a"
-          href="/activities"
+          href="/demos"
           color={colorInvert ? 'common.white' : 'text.primary'}
           sx={{ display: 'flex', alignItems: 'center' }}
         >
-          Activities
+          Demos
           <Box
             padding={0.5}
             display={'inline-flex'}
@@ -35,18 +35,28 @@ const TopNav = ({ colorInvert = false }: Props): JSX.Element => {
               new
             </Typography>
           </Box>
-        </Link>
+        </Link> */}
       </Box>
       <Box marginRight={{ xs: 1, sm: 2 }}>
-        <Link
+        {/* <Link
           underline="none"
           component="a"
-          href="/activities"
+          href="/blocks"
           color={colorInvert ? 'common.white' : 'text.primary'}
           sx={{ display: 'flex', alignItems: 'center' }}
         >
-          Home
-        </Link>
+          Components
+        </Link> */}
+      </Box>
+      <Box marginRight={{ xs: 1, sm: 2 }}>
+        {/* <Link
+          underline="none"
+          component="a"
+          href="/docs/introduction"
+          color={colorInvert ? 'common.white' : 'text.primary'}
+        >
+          Docs
+        </Link> */}
       </Box>
       <Box>
         <ThemeModeToggler />

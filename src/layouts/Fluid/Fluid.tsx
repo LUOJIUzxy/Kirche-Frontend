@@ -92,10 +92,10 @@ const Fluid = ({
               color="primary"
               component="a"
               target="blank"
-              href="/signin-cover"
+              href="https://mui.com/store/items/the-front-landing-page/"
               size="large"
             >
-              Login
+              Buy now
             </Button>
           </Box>
         </Container>

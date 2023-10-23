@@ -3,7 +3,7 @@ export const HTTP_METHOD = {
   GET: 'GET',
   POST: 'POST',
   PATCH: 'PATCH',
-  DELETE: 'DELETE',
+  DELETE: 'DELETE'
 };
 
 export const XSRF_TOKEN: any = {
@@ -45,6 +45,7 @@ export const ENDPOINT: any = {
   COMP: {
     UPDATE: '/company/update',
     LIST: '/company/list',
+    SEV_DESK_TOKEN: '/company/token/sev-desk',
   },
   CONTACT: {
     ADD: '/contact/add',
@@ -56,6 +57,11 @@ export const ENDPOINT: any = {
     ADD: '/currency/add',
     LIST: '/currency/list',
     DELETE: '/currency/delete',
+  },
+  COUNTRY: {
+    ADD: '/country/add',
+    LIST: '/country/list',
+    DELETE: '/country/delete',
   },
   UNIT: {
     ADD: '/unit/add',
@@ -85,7 +91,7 @@ export const ENDPOINT: any = {
     ADD_TO_OFFER: '/contract-item/add/offer',
     LIST_OFFER: '/contract-item/list/offer',
     DELETE: '/contract-item/delete',
-    ADD_LIST: '/contract-item/add/list',
+    ADD_LIST: '/contract-item/add/list'
   },
   FILE: {
     UPLOAD_FILE: '/file/upload',
@@ -94,5 +100,8 @@ export const ENDPOINT: any = {
   },
   URL_PDF: {
     CONVERT: '/url-pdf/convert',
+  },
+  SEV_DESK: {
+    CONTACT: '/sev-desk/Contact',
   },
 };
