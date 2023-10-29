@@ -57,26 +57,8 @@ const Topbar = ({ onSidebarOpen }: Props): JSX.Element => {
             Pages
           </Link>
         </Box>
-        <Box marginLeft={3}>
-          <Link
-            underline="none"
-            component="a"
-            href="/blocks"
-            color="text.primary"
-          >
-            Components
-          </Link>
-        </Box>
-        <Box marginLeft={3}>
-          <Link
-            underline="none"
-            component="a"
-            href="/demos"
-            color="text.primary"
-          >
-            Demos
-          </Link>
-        </Box>
+  
+        
         <Box marginLeft={3}>
           <ThemeModeToggler />
         </Box>

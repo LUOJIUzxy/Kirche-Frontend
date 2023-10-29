@@ -22,6 +22,7 @@
 import React from 'react';
 import {useRoutes} from 'react-router-dom';
 import {Provider} from 'react-redux';
+import Page from './components/Page';
 
 import {CacheProvider} from '@emotion/react';
 
@@ -51,14 +52,16 @@ function App({emotionCache = clientSideEmotionCache}) {
   const persistor = persistStore(store);
 
   return (
-    <CacheProvider value={emotionCache}>
-      <ReactNotifications/>
-      <Provider store={store}>
-        <PersistGate loading={null} persistor={persistor}>
-          <AuthProvider>{content}</AuthProvider>
-        </PersistGate>
-      </Provider>
-    </CacheProvider>
+    <Page>
+      <CacheProvider value={emotionCache}>
+        <ReactNotifications/>
+        <Provider store={store}>
+          <PersistGate loading={null} persistor={persistor}>
+            <AuthProvider>{content}</AuthProvider>
+          </PersistGate>
+        </Provider>
+      </CacheProvider>
+    </Page>
   );
 }
 
