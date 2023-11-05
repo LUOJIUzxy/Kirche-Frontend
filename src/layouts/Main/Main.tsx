@@ -64,7 +64,7 @@ const Main = ({
         <Container paddingY={1}>
           <Topbar
             onSidebarOpen={handleSidebarOpen}
-            pages={pages}
+            // pages={pages}
             colorInvert={trigger ? false : colorInvert}
           />
         </Container>

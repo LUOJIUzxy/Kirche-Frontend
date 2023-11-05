@@ -1,226 +1,118 @@
 const pages = {
   landings: [
     {
-      title: 'Activities',
-      href: '/activities',
+      title: 'Text',
+      href: '/',
     },
     {
       title: 'Text',
-      
+      href: '/',
     },
     {
       title: 'Text',
-
+      href: '/',
     },
     {
       title: 'Text',
-     
+      href: '/',
     },
     {
       title: 'Text',
-      
+      href: '/',
     },
     {
       title: 'Text',
-     
-    },
-    {
-      title: 'Text',
-     
-    },
-    {
-      title: 'Text',
-    
-    },
-    {
-      title: 'Text',
-     
-    },
-    {
-      title: 'Text',
-    
-    },
-    {
-      title: 'Text',
-     
-    },
-    {
-      title: 'Text',
-     
-    },
-    {
-      title: 'Text',
-    
-    },
-    {
-      title: 'Text',
-    
-    },
-    {
-      title: 'Text',
-    
-    },
-    {
-      title: 'Text',
-   
-    },
-    {
-      title: 'Text',
-     
-    },
-    {
-      title: 'Text',
-    
+      href: '/',
     },
   ],
   company: [
     {
       title: 'Text',
-      
+      href: '/',
     },
     {
       title: 'Text',
-      
+      href: '/',
     },
     {
       title: 'Text',
-      
+      href: '/',
     },
     {
       title: 'Text',
-     
-    },
-    {
-      title: 'Text',
-     
-    },
-    {
-      title: 'Text',
-     
-    },
-    {
-      title: 'Text',
-     
-    },
-    {
-      title: 'Text',
-     
-    },
-    {
-      title: 'Text',
-     
-    },
-    {
-      title: 'Text',
-    
-    },
-    {
-      title: 'Text',
-     
+      href: '/',
     },
   ],
-  account: [
+  account: [ 
     {
       title: 'Text',
-     
+      href: '/',
     },
     {
       title: 'Text',
-     
+      href: '/',
     },
     {
       title: 'Text',
-     
+      href: '/',
     },
     {
       title: 'Text',
-     
-    },
-    {
-      title: 'Text',
-     
-    },
-    {
-      title: 'Text',
-    
-    },
-    {
-      title: 'Text',
-     
-    },
-    {
-      title: 'Text',
-      
-    },
-    {
-      title: 'Text',
-     
-    },
-    {
-      title: 'Text',
-     
+      href: '/',
     },
   ],
   secondary: [
     {
       title: 'Text',
-    
+      href: '/',
     },
     {
       title: 'Text',
-     
+      href: '/',
     },
     {
       title: 'Text',
-     
+      href: '/',
     },
     {
       title: 'Text',
-    
-    },
-    {
-      title: 'Text',
-      
-    },
-    {
-      title: 'Text',
-     
+      href: '/',
     },
   ],
   blog: [
     {
       title: 'Text',
-    
+      href: '/',
     },
     {
       title: 'Text',
-     
+      href: '/',
     },
     {
       title: 'Text',
-     
+      href: '/',
     },
     {
       title: 'Text',
-      
+      href: '/',
     },
   ],
   portfolio: [
     {
       title: 'Text',
-     
+      href: '/',
     },
     {
       title: 'Text',
-     
+      href: '/',
     },
     {
       title: 'Text',
-     
+      href: '/',
     },
     {
       title: 'Text',
-     
+      href: '/',
     },
   ],
 };

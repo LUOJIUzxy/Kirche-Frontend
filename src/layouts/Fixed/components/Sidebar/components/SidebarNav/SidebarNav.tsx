@@ -8,13 +8,13 @@ import CloseIcon from '@mui/icons-material/Close';
 interface Props {
   // eslint-disable-next-line @typescript-eslint/ban-types
   onClose: () => void;
-  pages: Array<{
-    groupTitle: string;
-    pages: Array<PageItem>;
-  }>;
+  // pages: Array<{
+  //   groupTitle: string;
+  //   pages: Array<PageItem>;
+  // }>;
 }
 
-const SidebarNav = ({ pages, onClose }: Props): JSX.Element => {
+const SidebarNav = ({  onClose }: Props): JSX.Element => {
   const theme = useTheme();
   const [activeLink, setActiveLink] = useState('');
   useEffect(() => {
@@ -31,7 +31,7 @@ const SidebarNav = ({ pages, onClose }: Props): JSX.Element => {
         <CloseIcon fontSize="small" />
       </Box>
       <Box paddingX={2}>
-        {pages.map((item, i) => (
+        {/* {pages.map((item, i) => (
           <Box key={i} marginBottom={3}>
             <Typography
               variant="caption"
@@ -72,7 +72,24 @@ const SidebarNav = ({ pages, onClose }: Props): JSX.Element => {
               ))}
             </Box>
           </Box>
-        ))}
+        ))} */}
+      </Box>
+      <Box>
+        <Button variant="outlined" fullWidth component="a" href="/">
+          Browse pages
+        </Button>
+      </Box>
+      <Box marginTop={1}>
+        <Button
+          variant="contained"
+          color="primary"
+          fullWidth
+          component="a"
+          target="blank"
+          href="https://mui.com/store/items/the-front-landing-page/"
+        >
+          Purchase now
+        </Button>
       </Box>
     </Box>
   );

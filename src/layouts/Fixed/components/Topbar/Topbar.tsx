@@ -43,12 +43,36 @@ const Topbar = ({ onSidebarOpen }: Props): JSX.Element => {
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box marginLeft={3}>
-          <Link underline="none" component="a" href="/activities" color="text.primary">
+          <Link underline="none" component="a" href="/" color="text.primary">
             Home
           </Link>
         </Box>
         <Box marginLeft={3}>
+          <Link
+            underline="none"
+            component="a"
+            href="/home"
+            color="text.primary"
+          >
+            Pages
+          </Link>
+        </Box>
+  
+        
+        <Box marginLeft={3}>
           <ThemeModeToggler />
+        </Box>
+        <Box marginLeft={3}>
+          <Button
+            variant="contained"
+            color="primary"
+            component="a"
+            target="blank"
+            href="https://mui.com/store/items/the-front-landing-page/"
+            size="large"
+          >
+            Purchase now
+          </Button>
         </Box>
       </Box>
       <Box sx={{ display: { xs: 'flex', md: 'none' } }} alignItems={'center'}>

@@ -8,13 +8,13 @@ interface Props {
   onClose: () => void;
   open: boolean;
   variant: 'permanent' | 'persistent' | 'temporary' | undefined;
-  pages: Array<{
-    groupTitle: string;
-    pages: Array<PageItem>;
-  }>;
+  // pages: Array<{
+  //   groupTitle: string;
+  //   pages: Array<PageItem>;
+  // }>;
 }
 
-const Sidebar = ({ pages, open, variant, onClose }: Props): JSX.Element => {
+const Sidebar = ({  open, variant, onClose }: Props): JSX.Element => {
   return (
     <Drawer
       anchor="left"
@@ -37,7 +37,7 @@ const Sidebar = ({ pages, open, variant, onClose }: Props): JSX.Element => {
           paddingTop: { xs: 2, sm: 3 },
         }}
       >
-        <SidebarNav pages={pages} onClose={onClose} />
+        <SidebarNav onClose={onClose} />
       </Box>
     </Drawer>
   );

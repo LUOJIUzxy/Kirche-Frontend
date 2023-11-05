@@ -50,6 +50,29 @@ const Footer = (): JSX.Element => {
                 Home
               </Link>
             </Box>
+            <Box marginTop={1} marginRight={2}>
+              <Link
+                underline="none"
+                component="a"
+                href="/docs/introduction"
+                color="text.primary"
+                variant={'subtitle2'}
+              >
+                Documentation
+              </Link>
+            </Box>
+            <Box marginTop={1}>
+              <Button
+                variant="outlined"
+                color="primary"
+                component="a"
+                target="blank"
+                href="https://mui.com/store/items/the-front-landing-page/"
+                size="small"
+              >
+                Purchase now
+              </Button>
+            </Box>
           </Box>
         </Box>
       </Grid>
@@ -60,7 +83,7 @@ const Footer = (): JSX.Element => {
           color="text.secondary"
           gutterBottom
         >
-          &copy; theFront. 2023, Munich. All rights reserved
+          &copy; theFront. 2021, Maccarian. All rights reserved
         </Typography>
         <Typography
           align={'center'}

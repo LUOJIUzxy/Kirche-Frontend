@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import { alpha, useTheme } from '@mui/material/styles';
 
 const ThemeModeToggler = (): JSX.Element => {
+  //get the current theme
   const theme = useTheme();
   const { themeToggler } = theme;
   const { mode } = theme.palette;
+
+  // const [mode, setMode] = useState(theme.palette.mode);
+  // const themeToggler = () => {
+  //   setMode(mode === 'light' ? 'dark' : 'light');
+  // };
+
+  // const [darkMode, setDarkMode] = useState(false);
 
   return (
     <Button

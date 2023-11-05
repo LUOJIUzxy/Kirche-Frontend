@@ -68,7 +68,7 @@ The following are the pages that have Figma and Sketch design implementation:
 ## Quick start
 
 - Install dependencies: `yarn install`
-- Start the server: `yarn run dev`
+- Start the server: `yarn run start`
 - Build on production: `yarn run build`
 
 ## MUI Documentation

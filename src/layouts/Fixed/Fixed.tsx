@@ -8,7 +8,6 @@ import AppBar from '@mui/material/AppBar';
 import Container from 'components/Container';
 import { Topbar, Sidebar, Footer } from './components';
 
-
 interface Props {
   children: React.ReactNode;
 }
@@ -45,6 +44,12 @@ const Fixed = ({ children }: Props): JSX.Element => {
           <Topbar onSidebarOpen={handleSidebarOpen} />
         </Container>
       </AppBar>
+      <Sidebar
+        onClose={handleSidebarClose}
+        open={open}
+        variant={isMd ? 'permanent' : 'temporary'}
+        // pages={pages}
+      />
       <main>
         <Box height={{ xs: 58, sm: 66, md: 71 }} />
         <Box

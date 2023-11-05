@@ -43,12 +43,25 @@ const Footer = (): JSX.Element => {
               <Link
                 underline="none"
                 component="a"
-                href="/activities"
+                href="/home"
                 color="text.primary"
                 variant={'subtitle2'}
               >
-                Home
+                首页
               </Link>
+            </Box>
+            
+            <Box marginTop={1}>
+              <Button
+                variant="outlined"
+                color="primary"
+                component="a"
+                target="blank"
+                href="https://mui.com/store/items/the-front-landing-page/"
+                size="small"
+              >
+                发现
+              </Button>
             </Box>
           </Box>
         </Box>
@@ -60,7 +73,7 @@ const Footer = (): JSX.Element => {
           color="text.secondary"
           gutterBottom
         >
-          &copy; theFront. 2023, Munich. All rights reserved
+          &copy; theFront. 2023, Municn. All rights reserved
         </Typography>
         <Typography
           align={'center'}

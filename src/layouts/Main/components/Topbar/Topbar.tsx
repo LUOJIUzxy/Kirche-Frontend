@@ -9,32 +9,32 @@ import { NavItem } from './components';
 interface Props {
   // eslint-disable-next-line @typescript-eslint/ban-types
   onSidebarOpen: () => void;
-  pages: {
-    landings: Array<PageItem>;
-    company: Array<PageItem>;
-    account: Array<PageItem>;
-    secondary: Array<PageItem>;
-    blog: Array<PageItem>;
-    portfolio: Array<PageItem>;
-  };
+  // pages: {
+  //   landings: Array<PageItem>;
+  //   company: Array<PageItem>;
+  //   account: Array<PageItem>;
+  //   secondary: Array<PageItem>;
+  //   blog: Array<PageItem>;
+  //   portfolio: Array<PageItem>;
+  // };
   colorInvert?: boolean;
 }
 
 const Topbar = ({
   onSidebarOpen,
-  pages,
+  // pages,
   colorInvert = false,
 }: Props): JSX.Element => {
   const theme = useTheme();
   const { mode } = theme.palette;
-  const {
-    landings: landingPages,
-    secondary: secondaryPages,
-    company: companyPages,
-    account: accountPages,
-    portfolio: portfolioPages,
-    blog: blogPages,
-  } = pages;
+  // const {
+  //   landings: landingPages,
+  //   secondary: secondaryPages,
+  //   company: companyPages,
+  //   account: accountPages,
+  //   portfolio: portfolioPages,
+  //   blog: blogPages,
+  // } = pages;
 
   return (
     <Box
@@ -64,49 +64,50 @@ const Topbar = ({
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box>
           <NavItem
-            title={'Landings'}
-            id={'landing-pages'}
-            items={landingPages}
+            title={'首页'}
+            id={'home-pages'}
+            redirect={'/home'}
+            // items={landingPages}
             colorInvert={colorInvert}
           />
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Text'}
-            id={'company-pages'}
-            items={companyPages}
+            title={'最新动态'}
+            id={'news-pages'}
+            redirect={'/news'}
             colorInvert={colorInvert}
           />
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Text'}
-            id={'account-pages'}
-            items={accountPages}
+            title={'聚会安排'}
+            id={'meetups-pages'}
+            redirect={'/meetups'}
             colorInvert={colorInvert}
           />
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Text'}
-            id={'secondary-pages'}
-            items={secondaryPages}
+            title={'联系我们'}
+            id={'contact-pages'}
+            redirect={'/contacts'}
             colorInvert={colorInvert}
           />
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Text'}
-            id={'blog-pages'}
-            items={blogPages}
+            title={'奉献支持'}
+            id={'support-pages'}
+            redirect={'/support'}
             colorInvert={colorInvert}
           />
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Text'}
-            id={'portfolio-pages'}
-            items={portfolioPages}
+            title={'相册'}
+            id={'album-pages'}
+            redirect={'/album'}
             colorInvert={colorInvert}
           />
         </Box>
@@ -119,7 +120,7 @@ const Topbar = ({
             href="/signin-cover"
             size="large"
           >
-            Login
+            登陆
           </Button>
         </Box>
       </Box>
