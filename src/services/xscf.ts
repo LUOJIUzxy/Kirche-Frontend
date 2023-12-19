@@ -1,5 +1,5 @@
-import { AxiosResponse } from "axios";
-import http from "../utils/http";
+import { AxiosResponse } from 'axios';
+import http from '../utils/http';
 
 const XsrfService = {
     getToken: async (url: string) => {
@@ -12,6 +12,6 @@ const XsrfService = {
             console.log(error);
         }
     }
-}
+};
 
 export default XsrfService;

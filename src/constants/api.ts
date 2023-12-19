@@ -9,11 +9,13 @@ export const HTTP_METHOD = {
 export const XSRF_TOKEN: any = {
   AUTH: 'X-XSRF-TOKEN',
   BASIC_INFORMATION: 'X-XSRF-TOKEN',
+  STRIPE: 'X-XSRF-TOKEN',
 };
 
 export const XSRF_COOKIE: any = {
   AUTH: 'XSRF-TOKEN',
   BASIC_INFORMATION: 'XSRF-TOKEN',
+  STRIPE: 'XSRF-TOKEN',
 };
 
 export const ENDPOINT: any = {
@@ -26,5 +28,8 @@ export const ENDPOINT: any = {
   },
   BASIC_INFORMATION: {
     CONTACT: '/basic-information/contact',
-  }
+  },
+  STRIPE: {
+    LINK: '/stripe/link',
+},
 };

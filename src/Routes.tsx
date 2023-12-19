@@ -19,7 +19,7 @@ const ContactPage = async(() => import('./pages/Contacts'));
 const HomePage = async(() => import('./pages/Home'));
 const NewsPage = async(() => import('./pages/News'));
 //const MeetupPage = async(() => import('./pages/Elearning'));
-// const SupportPage = async(() => import('./pages/HelpCenter'));
+const SupportPage = async(() => import('./pages/Support'));
 const AlbumPage = async(() => import('./pages/Album'));
 
 const Routes = [
@@ -73,7 +73,7 @@ const Routes = [
   },
   {
     path: 'support',
-    element: <NewsPage/>,
+    element: <SupportPage/>,
   },
   {
     path: 'album',
